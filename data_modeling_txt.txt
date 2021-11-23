@@ -1,0 +1,80 @@
+-users can sign into the app with their email and password
+
+-users can create recipes with ingredients and instructions
+
+-recipes can be marked as public or private
+
+-users can view other people’s recipes
+
+-ingredients from recipes can be added to user’s grocery lists
+
+-users can create their own occasions and assign recipes to occasions
+
+
+
+      **  **                 **  **
+      /\  /\                 /\  /\
+     //\\//\\ BRAINSTORMING //\\//\\
+*****\\//\\//     SESH      \\//\\//*****
+      \/  \/                 \/  \/
+      **  **                 **  **
+
+
+
+users
+ *user_id
+ *display_name
+
+
+auth
+ *hash
+ *email
+ *user_id
+ *auth_id
+ *rec_key
+
+
+recipe
+ *rec_id
+ *user_id
+ *rec_text
+ *photo_url
+ *serving_size
+ *date
+
+
+rec_instruction
+ *rec_ins_id
+ *serving_size
+ *user_id
+ *date
+ *measurement_conv
+ *ingre_id
+ *ingre_qty
+ *ingre_name
+
+
+recipe_auth
+ *rec_auth_id
+ *user_id
+ *rec_key
+
+
+measurement_conv
+ *cups
+ *tea_spn
+ *table_spn
+ *liter
+ *pounds
+ *pint
+ *ounces
+ *gallon
+
+
+ingredients
+ *ingre_idrec
+ *user_id
+ *ingre_name
+ *rec_sequence_id
+
+
